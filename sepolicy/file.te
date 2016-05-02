@@ -11,7 +11,7 @@ type chargeonly_data_file, file_type, data_file_type;
 # Cutback socket (RILD)
 type cutback_data_file, file_type, data_file_type;
 
-# CMHW
+# MKHW
 type vibeamp_sysfs, fs_type, sysfs_type;
 
 #fsg

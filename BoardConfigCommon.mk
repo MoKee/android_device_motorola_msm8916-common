@@ -62,11 +62,11 @@ BLUETOOTH_HCI_USE_MCT := true
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
 
-# CMHW
-BOARD_USES_CYANOGEN_HARDWARE := true
+# MKHW
+BOARD_USES_MOKEE_HARDWARE := true
 BOARD_HARDWARE_CLASS += \
-    $(VENDOR_PATH)/cmhw \
-    hardware/cyanogen/cmhw
+    $(VENDOR_PATH)/mkhw \
+    hardware/mokee/mkhw
 
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
