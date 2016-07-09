@@ -63,9 +63,7 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 
 # MKHW
 BOARD_USES_MOKEE_HARDWARE := true
-BOARD_HARDWARE_CLASS += \
-    $(VENDOR_PATH)/mkhw \
-    hardware/mokee/mkhw
+BOARD_HARDWARE_CLASS += hardware/mokee/mkhw
 
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
