@@ -11,7 +11,7 @@
 # Camera
 /data/cam_socket[12]                                        u:object_r:camera_socket:s0
 
-# CMHW
+# MKHW
 /sys/devices/virtual/timed_output/vibrator/vtg_level        u:object_r:vibeamp_sysfs:s0
 
 # Motorola services
