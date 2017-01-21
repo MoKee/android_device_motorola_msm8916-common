@@ -80,6 +80,9 @@ USE_OPENGL_RENDERER := true
 BOARD_HAVE_QCOM_FM := true
 TARGET_QCOM_NO_FM_FIRMWARE := true
 
+# Filesystem
+TARGET_ANDROID_FILESYSTEM_CONFIG_H := $(VENDOR_PATH)/android_filesystem_config.h
+
 # Init
 TARGET_UNIFIED_DEVICE := true
 
@@ -98,6 +101,10 @@ TARGET_SYSTEM_PROP += $(VENDOR_PATH)/system.prop
 
 # Qualcomm support
 BOARD_USES_QCOM_HARDWARE := true
+
+# Radio
+BOARD_PROVIDES_LIBRIL := true
+BOARD_PROVIDES_RILD := true
 
 # Recovery
 BOARD_HAS_NO_SELECT_BUTTON := true
