@@ -1,8 +1,5 @@
 # system.prop for msm8916-common
 
-# Android Run Time
-ro.sys.fw.dex2oat_thread_count=4
-
 # Audio
 audio.offload.24bit.enable=false
 audio.offload.buffer.size.kb=64
@@ -31,13 +28,6 @@ ro.qualcomm.bt.hci_transport=smd
 
 ro.bluetooth.dun=true
 ro.bluetooth.sap=true
-ro.qualcomm.bluetooth.ftp=true
-ro.qualcomm.bluetooth.hfp=true
-ro.qualcomm.bluetooth.hsp=true
-ro.qualcomm.bluetooth.map=true
-ro.qualcomm.bluetooth.nap=true
-ro.qualcomm.bluetooth.opp=true
-ro.qualcomm.bluetooth.pbap=true
 
 # Camera
 camera2.portability.force_api=1
