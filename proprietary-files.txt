@@ -47,8 +47,6 @@ vendor/lib/libmm-hdcpmgr.so
 vendor/lib/libmmQSM.so
 vendor/lib/librpmb.so
 vendor/lib/libssd.so
-vendor/lib/libwvdrm_L1.so
-vendor/lib/libWVStreamControlAPI_L1.so
 
 # GPS
 etc/flp.conf
@@ -105,11 +103,6 @@ vendor/lib/libmm-color-convertor.so
 vendor/lib/libOmxAacDec.so
 vendor/lib/libOmxEvrcDec.so
 vendor/lib/libOmxQcelp13Dec.so
-
-# Moto
-bin/batt_health
-bin/dbvc_atvc_property_set
-bin/hardware_revisions.sh
 
 # IMS
 -vendor/app/ims/ims.apk|138de3a169d8c4703d9e5645abeb19e427b04909
