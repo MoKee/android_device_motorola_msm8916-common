@@ -55,7 +55,7 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
     </privapp-permissions>
 
-    <privapp-permissions package="org.lineageos.settings.device">
+    <privapp-permissions package="org.mokee.settings.device">
         <permission name="android.permission.MODIFY_PHONE_STATE"/>
     </privapp-permissions>
 

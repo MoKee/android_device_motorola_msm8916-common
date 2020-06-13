@@ -120,7 +120,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Security patch level
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.lineage.build.vendor_security_patch=2018-06-01
+    ro.mk.build.vendor_security_patch=2018-06-01
 
 # RmNet Data
 PRODUCT_PROPERTY_OVERRIDES += \
