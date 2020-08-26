@@ -22,9 +22,9 @@ set -e
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-CM_ROOT="$MY_DIR"/../../..
+MOKEE_ROOT="$MY_DIR"/../../..
 
-HELPER="$CM_ROOT"/vendor/mokee/build/tools/extract_utils.sh
+HELPER="$MOKEE_ROOT"/vendor/mokee/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -48,12 +48,12 @@ else
 fi
 
 # Initialize the helper
-setup_vendor "$DEVICE_COMMON" "$VENDOR" "$CM_ROOT" true
+setup_vendor "$DEVICE_COMMON" "$VENDOR" "$MOKEE_ROOT" true
 extract "$MY_DIR"/proprietary-files.txt "$SRC"
 
 if [ -s "$MY_DIR"/../$DEVICE/proprietary-files.txt ]; then
     # Reinitialize the helper for device
-    setup_vendor "$DEVICE" "$VENDOR" "$CM_ROOT"
+    setup_vendor "$DEVICE" "$VENDOR" "$MOKEE_ROOT"
     extract "$MY_DIR"/../$DEVICE/proprietary-files.txt "$SRC"
 fi
 
