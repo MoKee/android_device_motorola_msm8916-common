@@ -97,18 +97,7 @@ TARGET_HW_DISK_ENCRYPTION := true
 # Display
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 TARGET_CONTINUOUS_SPLASH_ENABLED := true
-TARGET_USES_C2D_COMPOSITION := true
 TARGET_USES_ION := true
-
-# Dexpreopt
-ifeq ($(HOST_OS),linux)
-  ifneq ($(TARGET_BUILD_VARIANT),eng)
-    ifeq ($(WITH_DEXPREOPT),)
-      WITH_DEXPREOPT := true
-      WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
-    endif
-  endif
-endif
 
 # UI
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x02000000U
@@ -161,10 +150,6 @@ TARGET_LD_PRELOAD := \
 # Vendor Interface Manifest
 DEVICE_MANIFEST_FILE := $(VENDOR_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(VENDOR_PATH)/compatibility_matrix.xml
-
-ifeq ($(filter surnia,$(TARGET_DEVICE)),)
-DEVICE_MANIFEST_FILE += $(VENDOR_PATH)/live_display_manifest.xml
-endif
 
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true

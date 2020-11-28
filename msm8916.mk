@@ -138,7 +138,6 @@ PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl \
     android.hardware.renderscript@1.0-service \
     gralloc.msm8916 \
-    copybit.msm8916 \
     hwcomposer.msm8916 \
     memtrack.msm8916 \
     libtinyxml
@@ -156,11 +155,6 @@ PRODUCT_PACKAGES += \
 ifeq ($(filter surnia,$(TARGET_DEVICE)),)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/extract_firmware.sh:install/bin/extract_firmware.sh
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.mokee.livedisplay@2.0-service-legacymm \
-    vendor.mokee.livedisplay@2.0-service-sysfs
 endif
 
 # Encryption
@@ -176,6 +170,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl \
     android.hardware.health@2.0-service
+
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    vendor.mokee.livedisplay@2.0-service-legacymm \
+    vendor.mokee.livedisplay@2.0-service-sysfs
 
 # GPS
 PRODUCT_PACKAGES += \
