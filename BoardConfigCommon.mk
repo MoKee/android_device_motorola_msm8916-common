@@ -126,6 +126,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Release Tools
 TARGET_RELEASETOOLS_EXTENSIONS := $(VENDOR_PATH)
 
+# RIL
+TARGET_USES_OLD_MNC_FORMAT := true
+
 # Root
 BOARD_ROOT_EXTRA_FOLDERS := firmware persist fsg
 
@@ -153,9 +156,6 @@ DEVICE_MATRIX_FILE := $(VENDOR_PATH)/compatibility_matrix.xml
 
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
-
-# Telephony
-TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
